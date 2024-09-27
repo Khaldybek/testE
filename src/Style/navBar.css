@@ -99,7 +99,9 @@ header {
     display: none;
 }
 
-/* CONTENT */
+.navContainer{
+    padding: 0px;
+}
 
 .content {
     display: flex;

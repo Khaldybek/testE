@@ -2,8 +2,8 @@ import '../Style/navBar.css';
 
 const Navbar = () => {
     return (
-        <div>
-            <video autoPlay loop muted playsInline className="background-video">
+        <div className="navContainer">
+            <video autoPlay loop muted playsInline className="background-video dsdcs">
                 <source
                     src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/82f375e7-244f-4c21-90ac-9abd7549ed05"
                     type="video/mp4"

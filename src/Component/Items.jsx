@@ -1,10 +1,12 @@
 import Item from "./Item.jsx";
-const Items = ({items}) => {
+import '../Style/items.css'
+const Items = ({items,setItems}) => {
+
     return (
-        <div>
+        <div className="items">
             {
                 items.map((item) => (
-                    <Item key={item.id} item={item} />
+                    <Item key={item.id} item={item} setItems={setItems} items={items} />
                 ))
             }
         </div>

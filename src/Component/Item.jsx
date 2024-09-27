@@ -1,15 +1,18 @@
 import '../Style/item.css'
-const Item = (props) => {
-
+const Item = ({item,setItems,items}) => {
+function deleteItem(e){
+    e.preventDefault()
+     setItems(items.filter(it => it.id != item.id))
+}
     return (
         <div className="card">
             <div className="face face1">
-                <h2>{props.item.title}</h2>
-                <p>{props.item.slang}</p>
-                <button>Delete</button>
+                <h2>{item.title}</h2>
+                <p>{item.slang}</p>
+                <button onClick={deleteItem}>Delete</button>
             </div>
             <div className="face face2">
-                <h2>{props.item.id}</h2>
+                <h2>{item.id}</h2>
             </div>
         </div>
     );
