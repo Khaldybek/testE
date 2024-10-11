@@ -2,7 +2,7 @@ import './Style/navBar.css';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className="navBar">
             <video autoPlay loop muted playsInline className="background-video">
                 <source
                     src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/82f375e7-244f-4c21-90ac-9abd7549ed05"
